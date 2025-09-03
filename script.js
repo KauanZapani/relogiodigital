@@ -5,11 +5,11 @@ function atualizarRelogio() {
   let minutos = agora.getMinutes().toString().padStart (2, '0'); 
   let segundos = agora.getSeconds().toString().padStart (2, '0');
   
-  const horaAtual $(horas):$(minutos):$(segundos);
+  const horaAtual = `$(horas):$(minutos):$(segundos)`;
   
   document.getElementById('clock').textContent = horaAtual;
 }
-Q +
-// Atualiza imediatamente e depois a cada segundo atualizarRelogio();
+
+// Atualiza imediatamente e depois a cada segundo
   atualizarRelogio();
   setInterval (atualizarRelogio, 1000);
